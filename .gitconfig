@@ -1,0 +1,6 @@
+[user]
+	name = Jan Jaworski
+	email = jaworek3211@gmail.com
+[core]
+	autocrlf = input
+	editor = nvim
