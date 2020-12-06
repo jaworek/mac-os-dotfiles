@@ -6,3 +6,5 @@
 	editor = nvim
 [init]
 	defaultBranch = master
+[help]
+	autocorrect = 50
