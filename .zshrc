@@ -6,6 +6,7 @@ alias \
 	ga="git add" \
 	gaa="git add ." \
 	gp="git push" \
+	gl="git log" \
 	gs="git status" \
 	gc="git commit" \
 	gch="git checkout"
