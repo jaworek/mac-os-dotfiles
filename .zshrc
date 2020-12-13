@@ -35,7 +35,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=/usr/local/opt/openssl/bin:$PATH
 
 # Set history
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory autocd
