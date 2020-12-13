@@ -4,7 +4,7 @@ autoload -U colors && colors
 eval "$(rbenv init -)"
 
 # iTerm 2 integrations
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Aliases
 alias \
@@ -43,7 +43,7 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH=/usr/local/opt/openssl/bin:$PATH
 
 # Set history
-HISTFILE=~/.cache/zsh/history
+HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory autocd
