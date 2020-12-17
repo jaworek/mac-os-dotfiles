@@ -16,14 +16,11 @@ alias \
 	gl="git log" \
 	gs="git status" \
 	gc="git commit" \
-	gch="git checkout"
-
-alias \
+	gch="git checkout" \
 	l="ls -ohG" \
-	la="ls -oAhG"
-
-alias \
-	nb="newsboat"
+	la="ls -oAhG" \
+	nb="newsboat" \
+	update="brew update && brew upgrade" \
 
 # Environment variables
 export LANG="en_US.UTF-8"
