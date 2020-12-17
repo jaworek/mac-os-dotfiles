@@ -22,6 +22,7 @@ alias \
 	nb="newsboat" \
 	update="brew update && brew upgrade" \
 	vim="nvim" \
+	myip="curl ipinfo.io/ip"
 
 # Environment variables
 export LANG="en_US.UTF-8"
