@@ -21,6 +21,7 @@ alias \
 	la="ls -oAhG" \
 	nb="newsboat" \
 	update="brew update && brew upgrade" \
+	vim="nvim" \
 
 # Environment variables
 export LANG="en_US.UTF-8"
