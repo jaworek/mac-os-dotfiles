@@ -17,6 +17,7 @@ alias \
 	gs="git status" \
 	gc="git commit" \
 	gch="git checkout" \
+	gr="git reset" \
 	l="ls -ohG" \
 	la="ls -oAhG" \
 	nb="newsboat" \
