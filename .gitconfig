@@ -8,3 +8,5 @@
 	defaultBranch = master
 [help]
 	autocorrect = 50
+[pull]
+	rebase = true
