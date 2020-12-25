@@ -21,13 +21,16 @@ alias \
 	l="ls -ohG" \
 	la="ls -oAhG" \
 	nb="newsboat" \
-	update="brew update && brew upgrade" \
 	vim="nvim" \
 	myip="curl ipinfo.io/ip"
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -v" \
 	mkdir="mkdir -pv" \
+
+if [[ $OSTYPE == darwin* ]]; then
+	alias update="brew update && brew upgrade"
+fi
 
 # Environment variables
 export LANG="en_US.UTF-8"
