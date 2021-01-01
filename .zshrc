@@ -1,11 +1,5 @@
 autoload -U colors && colors
 
-# Ruby
-#eval "$(rbenv init -)"
-
-# iTerm 2 integrations
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # Aliases
 alias \
 	g="git" \
@@ -97,20 +91,18 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Plugins
+source /usr/local/share/antigen/antigen.zsh
 
-# Substring search
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-# Autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# This option makes terminal laggy
-# ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-# Alias reminder
-source /usr/local/share/zsh-you-should-use/zsh-you-should-use.zsh
-# Command not found suggestion
-source /usr/local/share/zsh-command-not-found/zsh-command-not-found.zsh
+#antigen bundle jeffreytse/zsh-vi-mode
+antigen bundle zsh-users/zsh-autosuggestions
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+bindkey '^ ' autosuggest-accept
+antigen bundle "MichaelAquilina/zsh-you-should-use"
+antigen bundle command-not-found
 # Syntax highlighting. Must be last.
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen apply
+
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
