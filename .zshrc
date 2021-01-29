@@ -7,6 +7,7 @@ alias \
 	gaa="git add ." \
 	gac="gaa && gc" \
 	gp="g push" \
+	gpu="g pull" \
 	gl="g log" \
 	gs="g status" \
 	gc="g commit" \
