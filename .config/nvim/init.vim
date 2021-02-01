@@ -14,6 +14,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'doums/darcula'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 call plug#end()
 
 colorscheme darcula
