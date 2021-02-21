@@ -1,0 +1,10 @@
+font:
+  normal: 
+    family: JetBrains Mono
+    style: Regular
+  size: 12
+  offset:
+    y: 12
+  use_thin_strokes: true
+cursor:
+  style: Beam
