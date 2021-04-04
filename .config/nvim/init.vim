@@ -25,6 +25,7 @@ set termguicolors
 set nohlsearch
 set ignorecase
 set smartcase
+set hidden
 set clipboard+=unnamedplus
 set nocompatible
 set wildmode=longest,list,full
@@ -45,3 +46,9 @@ let g:go_highlight_extra_types = 1
 
 " Save file as sudo on files that require root permission
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+" Disable arrows
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>

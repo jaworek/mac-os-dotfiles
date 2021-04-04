@@ -8,7 +8,7 @@ alias \
 	gac="gaa && gc" \
 	gp="g push" \
 	gpu="g pull" \
-	gl="g log" \
+	gl="g log --graph --color --branches --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'" \
 	gs="g status" \
 	gc="g commit" \
 	gch="g checkout" \
