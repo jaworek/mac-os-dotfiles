@@ -15,3 +15,11 @@
     	diffFilter = delta --color-only
 [delta]
     	line-numbers = true
+[alias]
+    	# list files which have changed since REVIEW_BASE
+    	# (REVIEW_BASE defaults to 'master' in my zshrc)
+    	files = !git diff --name-only $(git merge-base HEAD \"$REVIEW_BASE\")
+
+    	# Same as above, but with a diff stat instead of just names
+    	# (better for interactive use)
+    	stat = !git diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")

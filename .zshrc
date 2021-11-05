@@ -34,6 +34,7 @@ export LC_ALL="en_US.UTF-8"
 export LC_TYPE="en_US.UTF-8"
 export MANPAGER='nvim +Man!'
 export HOMEBREW_NO_AUTO_UPDATE=1
+export REVIEW_BASE=master
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
