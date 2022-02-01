@@ -25,3 +25,5 @@
     	# Same as above, but with a diff stat instead of just names
     	# (better for interactive use)
     	stat = !git diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")
+[diff]
+	tool = vimdiff
