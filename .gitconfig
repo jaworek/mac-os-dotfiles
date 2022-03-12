@@ -4,7 +4,6 @@
 [core]
 	autocrlf = input
 	editor = nvim
-	pager = delta --paging never
 [init]
 	defaultBranch = master
 [help]
@@ -13,8 +12,6 @@
 	default = current
 [pull]
 	rebase = true
-[interactive]
-    	diffFilter = delta --color-only
 [delta]
     	line-numbers = true
 [alias]
