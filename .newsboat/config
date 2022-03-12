@@ -1,6 +1,7 @@
 #show-read-feeds no
 auto-reload yes
 reload-threads 100
+confirm-mark-feed-read no
 
 #external-url-viewer "urlscan -dc -r 'linkhandler {}'"
 
