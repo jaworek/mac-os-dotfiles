@@ -1,4 +1,4 @@
-let mapleader =","
+let mapleader =" "
 
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -17,6 +17,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jez/vim-colors-solarized'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'doums/darcula'
 " Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 call plug#end()
@@ -39,10 +40,18 @@ set clipboard+=unnamedplus
 set nocompatible
 set wildmode=longest,list,full
 set background=dark
+set tabstop=4 shiftwidth=4 softtabstop=4
+set smartindent
+set expandtab
+set exrc
+set hidden
+set noerrorbells
+set incsearch
+set scrolloff=8
+set signcolumn=yes
 filetype plugin indent on
 syntax on
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " Experiment with GO syntax highlighting to resemble JetBrains
 au BufRead,BufNewFile *.go set filetype=go
