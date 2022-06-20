@@ -1,5 +1,9 @@
 autoload -U colors && colors
 
+export ANDROID_SDK_ROOT=/Users/john/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
 # Aliases
 alias \
 	g="git" \
