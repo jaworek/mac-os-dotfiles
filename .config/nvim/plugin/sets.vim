@@ -4,6 +4,8 @@ set undodir=~/.config/nvim/undo-dir
 set undolevels=1000
 set undoreload=10000
 set undofile
+set noswapfile
+set nobackup
 set number relativenumber
 set termguicolors
 set nohlsearch
@@ -11,7 +13,6 @@ set ignorecase
 set smartcase
 set hidden
 set clipboard+=unnamedplus
-set nocompatible
 set wildmode=longest,list,full
 set background=dark
 set tabstop=4 shiftwidth=4 softtabstop=4
@@ -23,3 +24,5 @@ set noerrorbells
 set incsearch
 set scrolloff=8
 set signcolumn=yes
+set updatetime=100
+set title
