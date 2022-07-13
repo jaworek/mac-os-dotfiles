@@ -10,6 +10,7 @@
 	autocorrect = 50
 [push]
 	default = current
+	autoSetupRemote = true
 [pull]
 	rebase = true
 [delta]

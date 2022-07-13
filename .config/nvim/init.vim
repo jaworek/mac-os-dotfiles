@@ -12,6 +12,10 @@ call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'onsails/lspkind-nvim'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
@@ -24,6 +28,7 @@ Plug 'jghauser/mkdir.nvim'
 
 " Debugging
 Plug 'mfussenegger/nvim-dap'
+Plug 'Pocco81/DAPInstall.nvim', {'branch': 'dev'}
 
 " Telescope dependencies
 Plug 'nvim-lua/plenary.nvim'
@@ -56,3 +61,6 @@ autocmd BufWritePre * cal cursor(currPos[1], currPos[2])
 
 " Make file executable
 nnoremap <leader>x :silent !chmod +x %<CR>
+
+" Reload nvim source file
+nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>

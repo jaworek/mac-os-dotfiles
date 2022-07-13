@@ -24,5 +24,5 @@ set noerrorbells
 set incsearch
 set scrolloff=8
 set signcolumn=yes
-set updatetime=100
+set updatetime=50
 set title
