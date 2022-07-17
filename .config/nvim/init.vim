@@ -32,10 +32,15 @@ Plug 'Pocco81/DAPInstall.nvim', {'branch': 'dev'}
 
 " Telescope dependencies
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
+" Snippets
+Plug 'L3MON4D3/LuaSnip'
+
 call plug#end()
+
+lua require("john")
 
 colorscheme solarized
 
