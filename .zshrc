@@ -21,11 +21,12 @@ alias \
 	la="ls -oAhG" \
 	nb="newsboat" \
 	vim="nvim" \
-	myip="curl ipinfo.io/ip"
+	myip="curl ipinfo.io/ip" \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -v" \
 	mkdir="mkdir -pv" \
+	tree="tree --gitignore -C" \
 
 if [[ $OSTYPE == darwin* ]]; then
 	alias update="brew update && brew upgrade"
