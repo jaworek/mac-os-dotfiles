@@ -42,3 +42,19 @@ vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
 -- Open undotree
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+
+-- Move up and down half screen and center cursor
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
+-- Keep searches centered
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+
+-- Move lines around in visual mode
+vim.keymap.set('v', 'J', ":move '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":move '<-2<CR>gv=gv")
+
+-- Remap copilot shortcut
+vim.keymap.set('i', '<leader>g', 'copilot#Accept("<CR>")', { expr = true, silent = true })
+vim.g.copilot_no_tab_map = true

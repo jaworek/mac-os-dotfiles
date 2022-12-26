@@ -6,11 +6,7 @@
 -- set undofile
 -- set noswapfile
 -- set nobackup
--- set number relativenumber
--- set termguicolors
 -- set nohlsearch
--- set ignorecase
--- set smartcase
 -- set hidden
 -- set clipboard+=unnamedplus
 -- set wildmode=longest,list,full
@@ -21,7 +17,6 @@
 -- set exrc
 -- set hidden
 -- set noerrorbells
--- set incsearch
 -- set scrolloff=8
 -- set signcolumn=yes
 
@@ -34,8 +29,26 @@ vim.o.title = true
 -- Set highlight on search
 vim.o.hlsearch = false
 
+-- Set incremental search
+vim.o.incsearch = true
+
+-- Ignore case when seearching
+vim.o.ignorecase = true
+
+-- Apply case when searching with uppercase characters
+vim.o.smartcase = true
+
+-- Set scrolloff to 8 lines
+vim.o.scrolloff = 8
+
 -- Make line numbers default
 vim.wo.number = true
+
+-- Make line numbers relative
+vim.wo.relativenumber = true
+
+-- Set clipboard provider
+vim.o.clipboard = 'unnamedplus'
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
