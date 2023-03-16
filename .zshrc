@@ -1,8 +1,8 @@
 autoload -U colors && colors
 
-export ANDROID_SDK_ROOT=/Users/john/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Aliases
 alias \
@@ -114,3 +114,5 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 eval "$(starship init zsh)"
+# Init rbenv for Ruby version management, required for RN
+eval "$(rbenv init - zsh)"
