@@ -3,8 +3,8 @@
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 -- Remap for dealing with word wrap
-vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
-vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+-- vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+-- vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
@@ -56,5 +56,12 @@ vim.keymap.set('v', 'J', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":move '<-2<CR>gv=gv")
 
 -- Remap copilot shortcut
-vim.keymap.set('i', '<leader>g', 'copilot#Accept("<CR>")', { expr = true, silent = true })
+vim.keymap.set('i', '<C-g>', 'copilot#Accept("<CR>")', { expr = true, silent = true })
 vim.g.copilot_no_tab_map = true
+
+-- Diagnostic keymaps
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
+

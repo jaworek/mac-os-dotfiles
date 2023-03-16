@@ -1,4 +1,3 @@
--- set encoding=utf-8
 -- " Persistent undo
 -- " set undodir=~/.config/nvim/undo-dir
 -- set undolevels=1000
