@@ -1,4 +1,4 @@
-autoload -U colors && colors
+# autoload -U colors && colors
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -116,3 +116,4 @@ antigen apply
 eval "$(starship init zsh)"
 # Init rbenv for Ruby version management, required for RN
 eval "$(rbenv init - zsh)"
+export PATH=$PATH:$HOME/.maestro/bin
